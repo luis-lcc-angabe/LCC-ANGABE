@@ -6,6 +6,7 @@
   padding: 20px;
   display: flex;
   justify-content: center;
+  background-image: url("../imagenes/img-berlin.png");
 }
 
 .form-container {
@@ -15,7 +16,7 @@
   border-radius: 40px;
   margin-top: 20px;
   gap: 20px;
-  max-width: 70%;
+  max-width: 60%;
   width: 100%;
   justify-content: center;
   background-color: #bffdbf;
