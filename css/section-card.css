@@ -2,23 +2,10 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    padding-top: 3vw;
+    background-color: #FFFFFF;
     
 }
-
-.main-portafolio .section-button{
-    width: 100vw;
-    height: 194px;
-}
-
-.main-portafolio .section-button .buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 194px;
-    background: #FFFFFF;
-}
-
 
 .list-card{
     padding-bottom: 82px;

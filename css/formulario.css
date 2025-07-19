@@ -3,10 +3,13 @@
   background: #fff;
   width: 100%;
   margin: 0;
-  padding: 20px;
+  /* padding: 1vw; */
   display: flex;
   justify-content: center;
   background-image: url("../imagenes/img-berlin.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
 }
 
 .form-container {

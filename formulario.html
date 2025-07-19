@@ -8,33 +8,35 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/modal.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="css/cotizacion.css">
+
 </head>
 <body class="box-body">
   <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-            <div>
-                  <a class="link-webstudio" href="">ANGABE </a>
-                  <p class="salto">Lcc Traducciones</p>
-            </div>
-            
-            
-            <ul class="header-menu ">
-              <li class="open_submenu"> <a class="link-header " href="./index.html"> Inicio</a></li>
-              <li> <a class="link-header" href="./portafolio.html"> Clases</a></li>
-              <li> <a class="link-header" href=""> Intercambio</a></li>
-              <li> <a class="link-header" href=""> Cotizacion</a></li>
-              <button class="open-modal-btn">Iniciar Sesión</button>
+    <div class="container">
+      <nav class="header-nav">
+        <div>
+          <a class="link-webstudio" href="">ANGABE </a>
+          <p class="salto">Lcc Traducciones</p>
+        </div>
+        
+        
+        <ul class="header-menu ">
+            <li class="open_submenu"> <a class="link-header" href="./index.html"> Inicio</a></li>
+            <li> <a class="link-header" href="./portafolio.html"> Clases</a></li>
+            <li> <a class="link-header" href=""> Intercambio</a></li>
+            <li> <a class="link-header" class="open-modal-btns" onclick="openModal()"> Cotizacion</a></li>
+            <button class="open-modal-btn">Iniciar Sesión</button>
 
-            </ul>
-        </nav>
-
-        <ul class="logo">
-            <li class="logo__img">
-                <img src="./imagenes svg/logos/logo lcc.png" alt="">   
-            </li>    
         </ul>
-      </div>
+      </nav>
+
+      <ul class="logo">
+        <li class="logo__img">
+            <img src="./imagenes svg/logos/logo lcc.png" alt="">   
+        </li>    
+      </ul>
+    </div>
   </header>
   <!-- Modal -->
   <div class="modal-overlay" id="modalOverlay">
