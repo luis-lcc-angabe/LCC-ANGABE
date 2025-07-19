@@ -17,6 +17,23 @@
       background-color: #004d00;
       color: white;
     }
+    .open-modal-btns1 {
+      margin: 30px;
+      width: 100%;
+      padding: 12px 24px;
+      background-color:#078b21;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      font-style: italic;
+    }
+    .open-modal-btns1:hover {
+      background-color: #004d00;
+      color: white;
+    }
 
     /* Fondo del modal */
     .modal-1 {

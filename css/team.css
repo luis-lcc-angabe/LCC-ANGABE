@@ -1,0 +1,169 @@
+.team{
+    width: 100vw;
+    height: 708PX;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    background: #E5E5E5;
+}
+
+.box-imag-team{
+    position: relative;
+    left: -6%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.box-imag-team .card{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+
+}
+
+.box-imag-team .card h3{
+    margin-top: 30px;
+}
+
+.box-imag-team .card p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.team ul >li> img{
+    width: 270px;
+    height: 260px;
+
+}
+.car-margin{
+   margin-left: 0;
+}
+
+.card{
+    width: 270px;
+    background: #8dee79;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+    border-radius: 0px 0px 4px 4px;
+}
+.card ul{
+    margin-top: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card ul > li{
+    width: 44px;
+    height: 44px;
+    
+}
+
+.icon-card{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-left: 10px;
+    width: 32px;
+    height: 44px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    
+}
+
+.icon-card:hover{
+    fill: #FFFFFF;
+    background: #0b8f33;
+}
+
+.icon-card use{
+    fill: #AFB1B8;
+}
+
+.icon-card use:hover{ 
+    fill:  #FFFFFF;
+    
+    
+}
+
+.icon{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-left: 10px;
+    width: 32px;
+    height: 44px;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #2F303A;;
+    
+}
+
+.icon:hover{
+    fill: #FFFFFF;
+    background: #2196F3;
+}
+
+.icon use{
+    fill: #AFB1B8;
+}
+
+.icon use:hover{ 
+    fill:  #FFFFFF;;
+    
+    
+}
+
+.title-team{
+    width: 263px;
+    height: 42px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.card h3{
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.card p{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+letter-spacing: 0.03em;
+
+color: #757575;
+
+}
