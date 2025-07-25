@@ -1,10 +1,12 @@
+/* //////////////////////////////////////////// */
 .main-portafolio {
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 1vw;
-    background: #8dee79;
+    margin-top: 1vh;
+    
+    
 }
 
 .list-card{
@@ -13,107 +15,132 @@
     display: flex;
     align-items: center; 
     justify-content: center;
+    flex-direction: column;
     background-image: url(../imagenes/img1.png);
-     background-blend-mode: overlay;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+} 
+.list-card h1{
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 10px 06px rgba(0, 0, 0, 0.6);
 }
 
-.list-card .list-boxcard{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    gap: 30px;
-    background: #8dee79;
-    background-color: transparent;
-   
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
 }
 
-.list-card .list-boxcard .list-product{
-    position:relative;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 368px;
-    height: 404px;
-    border: 1px solid #EEEEEE;
-    background: #FFFFFF;
-    cursor: pointer;
-    border-radius: 5%;
+.carousel img {
+  display: none;
+  width: 100%;
+  height: 70vh;
+  /* object-fit: cover; */
+  transition: opacity 0.5s ease-in-out;
 }
 
-.list-card .list-boxcard .list-product:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.carousel img.active {
+  display: block;
 }
 
-.card-emergent{
-    position: absolute;
-    height: 168px;
-    width: 320px;
-    padding: 63px 24px;
-    background: rgb(11, 143, 51, 0.9);
-    transform: translateY(100%);
-    transition: transform 250ms ease;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.contact-section {
+  margin-top: 10px;
 }
 
-.list-card .list-boxcard .list-product:hover .card-emergent{
-    transform: translateY(-102%);
+.contact-section button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #078b21;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.card-animation{
-    border-radius: 5%;
-    width: 369px;
-    height: 294px;
-    position: relative;
-    overflow: hidden;
+.contact-section button:hover {
+  background-color: #1eba3d;
+}
+                        /* modal */
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
 }
 
-.card-emergent p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-
-    color: #FFFFFF;
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
 }
 
-.list-product img{
-    width: 368px;
-    height: 294px;
-    background: url(.jpg);
-}
-.card-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 30%;
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 10px -10px ;
+  padding: 10px;
+  font-size: 16px;
+  outline-color: #078b21;
 }
 
-.title-img-portafolio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    width: 100%;
-    height: 100%;
-    letter-spacing: 0.06em;
-    color: #212121;
+.modal-content button {
+  background-color: #078b21;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.title-img-portafolio:hover{
-    color: #1d8109;
+
+.modal-content button:hover {
+  background-color: #1eba3d;
 }
+
+.cerrar {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  width: 5%;
+  height: auto;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #078b21;
+  border-radius: 50%;
+}
+.cerrar:hover{
+  background-color: #078b21;
+  color: black;
+}
+
+.exito {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+
 @media (max-width: 500px) {
     .list-card{
         /* height: 200vh; */

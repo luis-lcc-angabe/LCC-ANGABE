@@ -101,55 +101,31 @@
                 </div>
             </div>
             <section class="list-card">
-                <div class="list-boxcard">
-                    <section class="list-product">
-                        <div class="card-animation">
-                            <img src="imagenes/portafolio-img1.jpg" alt="">
-                            <div class="card-emergent">
-                                <p>
-                                Tecnoduck es una plataforma de distribución de 
-                                coronavirus de última generación. Las compañías 
-                                usan esta plataforma para el espionaje digital y
-                                los ataques a los servidores seguros de la competencia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body" >
-                            <h3 class="title-img-portafolio">Tecnoduck</h3>
-                        </div>
-                    </section>
-                    <section class="list-product">
-                        <div class="card-animation">
-                            <img src="imagenes/portafolio-img2.jpg" alt="">
-                            <div class="card-emergent">
-                                <p>
-                                Tecnoduck es una plataforma de distribución de 
-                                coronavirus de última generación. Las compañías 
-                                usan esta plataforma para el espionaje digital y
-                                los ataques a los servidores seguros de la competencia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body" >
-                            <h3 class="title-img-portafolio">Póster de Nueva Orleans vs <br> Estrella Dorada</h3>
-                        </div>
-                    </section>
-                    <section class="list-product">
-                        <div class="card-animation">
-                            <img src="imagenes/portafolio-img3.jpg" alt="">
-                            <div class="card-emergent">
-                                <p>
-                                Tecnoduck es una plataforma de distribución de 
-                                coronavirus de última generación. Las compañías 
-                                usan esta plataforma para el espionaje digital y
-                                los ataques a los servidores seguros de la competencia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-body" >
-                            <h3 class="title-img-portafolio">Restaurante Seafood</h3>
-                        </div>
-                    </section>
+                <h1>Willkommen in die welt der kultur und der Sprachen</h1>
+                <section class="carousel">
+                    <img src="./imagenes/programaparaestudiaraleman.png" class="active" alt="Imagen 1">
+                    <img src="./imagenes/intercambios-austria2.png" alt="Imagen 2">
+                    <img src="./imagenes/liechtenstein.png" alt="Imagen 3">
+                    <img src="./imagenes/intercambios-suiza2.png" alt="Imagen 4">
+
+                </section>
+
+                <div class="contact-section">
+                    <button onclick="abrirModal3()">Contactar</button>
+                </div>
+                <!-- MODAL DE CONTACTO -->
+                <div id="modal3" class="modal3">
+                    <div class="modal-content">
+                    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                    <h2>Contáctanos</h2>
+                    <form id="formContacto">
+                        <input type="text" id="nombre" placeholder="Tu nombre" required />
+                        <input type="email" id="correo" placeholder="Tu correo electrónico" required />
+                        <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p id="mensajeExito" class="exito"></p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -238,7 +214,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/cotizacion.js"></script>
-  <script src="validacion.js"></script>
-
+    <script src="./js/validacion.js"></script>
+    <script src="./js/script-intercambio.js"></script>
 </body>
 </html>
