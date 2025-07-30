@@ -42,21 +42,31 @@
     height: 100%;
     width: 100%;
 }
-
-.banner-button{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    width: 261px;
-    height: 50px;
-    z-index: 6;
-    /* box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.70); */
-    /* border-radius: 4px; */
+/* Botón */
+.open-modal-btns{
+    z-index: 10;
+    margin: 30px;
+    width: 20%;
+    padding: 12px 24px;
+    background-color:#078b21;
+    border-radius: 10px;
+    cursor: pointer;
+  
+}
+.open-modal-btns button{
+    z-index: 20;
+    width: 100%;
+    background-color: initial;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    /* background-color: aqua; */
 }
 
-.banner-button .buttom:hover{
+.open-modal-btns:hover{
     background: rgb(11, 143, 51);
-    color: #FFFFFF;   
+    background-color: #05ac05;
+    color: white;
 }
