@@ -7,14 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="moderno-normalizar.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="./css/intercambio.css">
+    <link rel="stylesheet" href="./css/clases.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/cotizacion.css">
-    <!-- <link rel="stylesheet" href="./css/formulario.css"> -->
-
-
-
 </head>
 <body class="body__portafolio">     
     <!-- seccion del navbar-->
@@ -30,9 +26,9 @@
                     
                     <ul class="header-menu ">
                         <li class="open_submenu"> <a class="link-header " href="./index.html"> Inicio</a></li>
-                        <li> <a class="link-header " href="./clases.html"> Clases</a></li>
-                        <li> <a class="link-header" href="./traducciones.html">Traducciones</a></li>
-                        <li> <a class="link-header barra" href=""> Intercambio</a></li>
+                        <li> <a class="link-header barra" href="./clases.html"> Clases</a></li>
+                        <li> <a class="link-header" href=""> Traducciones</a></li>
+                        <li> <a class="link-header" href="./intercambio.html"> Intercambio</a></li>
                         <li> <a class="link-header" href="./cotizacion.html"> Cotizacion</a></li>
                         <button class="open-modal-btn">Iniciar Sesión</button>
 
@@ -70,31 +66,23 @@
             </div> 
             <section class="list-card">
                 <h1>Willkommen in die welt der kultur und der Sprachen</h1>
-                <section class="carousel">
-                    <img src="./imagenes/Intercambio en Alemania.png" class="active" alt="Imagen 1">
-                    <img src="./imagenes/Intercambio en austria.png" alt="Imagen 2">
-                    <img src="./imagenes/Intercambio en Luxemburgo.png" alt="Imagen 3">
-                    <img src="./imagenes/Intercambio en Suiza.png" alt="Imagen 4">
-                    <img src="./imagenes/Intercambio liechtenstein.png" alt="Imagen 5">
-
-                </section>
-
-                <div class="contact-section">
-                    <button onclick="abrirModal3()">Contactar</button>
-                </div>
-                <!-- MODAL DE CONTACTO -->
-                <div id="modal3" class="modal3">
-                    <div class="modal-content">
-                    <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                    <h2>Contáctanos</h2>
-                    <form id="formContacto">
-                        <input type="text" id="nombre" placeholder="Tu nombre" required />
-                        <input type="email" id="correo" placeholder="Tu correo electrónico" required />
-                        <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                    <p id="mensajeExito" class="exito"></p>
-                    </div>
+                <div class="list-boxcard">
+                    <section class="list-product">
+                        <div class="card-animation">
+                            <img src="imagenes/abcd-aleman.png" alt="">
+                            <div class="card-emergent">
+                                <p>
+                                Con los cursos podras aprender aleman de manera facil,  
+                                ya seas principiante, sepas un poco o mucho, aqui mejoraras
+                                tu vocabulario ypronunciacion, desde el nivel A1 hasta C1,
+                                on excelentes profesores y material didactico.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body" >
+                            <h3 class="title-img-portafolio">ALEMAN</h3>
+                        </div>
+                    </section>
                 </div>
             </section>
         </main>
@@ -183,7 +171,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/cotizacion.js"></script>
-    <script src="./js/validacion.js"></script>
-    <script src="./js/script-intercambio.js"></script>
+  <script src="validacion.js"></script>
+
 </body>
 </html>

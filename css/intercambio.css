@@ -16,11 +16,12 @@
     align-items: center; 
     justify-content: center;
     flex-direction: column;
-    background-image: url(../imagenes/img1.png);
+    background-image: url(../imagenes/luxemburgo.png);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgb(160, 160, 160);
     padding-bottom: 3vh;
     padding-top: 2vh;
 } 
