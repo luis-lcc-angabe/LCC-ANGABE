@@ -31,3 +31,10 @@ document.addEventListener('click', function(e) {
     }
   
 })
+
+ const toggleBtn = document.getElementById("menu-toggle");
+  const headerMenu = document.getElementById("header-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    headerMenu.classList.toggle("show");
+  });

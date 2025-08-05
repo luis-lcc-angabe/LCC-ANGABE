@@ -65,6 +65,7 @@ ul{
     gap: 3vw;
 }
 .header-menu li{
+    width: auto;
     cursor: pointer;
 }
 .header-menu .link-header{
@@ -116,7 +117,7 @@ ul{
     top: 100%;
     background: #0b8f33;
     border-radius: 2px;
-    margin-top: 29px;
+    margin-top: 20px;
     opacity: 0;
 }
 
@@ -128,6 +129,70 @@ ul{
 .link-header:hover {
     color: #0b8f33;
 }
+
+/* Estilos base para el botón hamburguesa */
+.menu-toggle {
+    display: none;
+    background: none;
+    height: 100%;
+    border: none;
+    font-size: 2rem;
+    color: #0b8f33;
+    cursor: pointer;
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem 0;
+    }
+
+    .header-menu.show {
+        display: flex;
+    }
+
+    .header-menu li{
+        margin-top: 1rem;
+        width: auto;
+        text-align: left;
+    }
+
+    .open-modal-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .open-modal-btn:hover {
+        color: white;
+        width: 110%;
+        height: 5vh;
+    }
+    .logo{
+        position: absolute;
+        top: 1rem;
+        left: 9rem;
+    }
+    .header .container .header-nav .header-menu li a::after,
+    .header-portafolio .container .header-nav .header-menu li a::after {
+        margin-top: 2px;
+    }
+}
+
 
 @media (max-width: 1024px) {
     .header {
