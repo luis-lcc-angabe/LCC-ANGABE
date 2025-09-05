@@ -1,46 +1,42 @@
 .main-portafolio {
     width: 100vw;
-    height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 1vw;
-    background: #8dee79;
+    background-color: #8dee79;
+    
+}
+
+.title-galery{
+    width: 300px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: transparent !important;
 }
 
 .list-card{
+    padding-bottom: 82px;
     width: 100vw;
-    height: auto;
     display: flex;
     align-items: center; 
     justify-content: center;
-    flex-direction: column;
-    background-image: url(../imagenes/img1.png);
-     background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgb(85, 85, 85) ;
 
-}
-.list-card h1{
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 0px 10px 06px rgba(0, 0, 0, 0.6);
 }
 
 .list-card .list-boxcard{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    width: 100vw;
-    height: auto;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    gap: 2rem;
+    gap: 30px;
     background: #8dee79;
-    background-color: transparent;
-   
 }
 
 .list-card .list-boxcard .list-product{
@@ -54,16 +50,22 @@
     background: #FFFFFF;
     cursor: pointer;
     border-radius: 5%;
+    text-decoration: none;
+
 }
 
 .list-card .list-boxcard .list-product:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-product a{
+    text-decoration: none;
 }
 
 .card-emergent{
     position: absolute;
-    height: 168px;
-    width: 320px;
+    height: 300px;
+    width: 367px;
     padding: 63px 24px;
     background: rgb(11, 143, 51, 0.9);
     transform: translateY(100%);
@@ -72,8 +74,9 @@
 }
 
 .list-card .list-boxcard .list-product:hover .card-emergent{
-    transform: translateY(-102%);
+    transform: translateY(-100%);
 }
+
 
 .card-animation{
     border-radius: 5%;
@@ -86,12 +89,10 @@
 .card-emergent p{
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    align-items: center;
-
-    color: #FFFFFF;
+    color: white;
 }
 
 .list-product img{
@@ -99,6 +100,7 @@
     height: 294px;
     background: url(.jpg);
 }
+
 .card-body{
     display: flex;
     align-items: center;
@@ -107,31 +109,34 @@
     height: 30%;
 }
 
+.title-img-portafolio:hover{
+    color: #1d8109;
+}
+
 .title-img-portafolio {
     display: flex;
     align-items: center;
     justify-content: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     width: 100%;
     height: 100%;
     letter-spacing: 0.06em;
     color: #212121;
 }
-.title-img-portafolio:hover{
-    color: #1d8109;
-}
 
-@media (max-width: 600px) {
-    .list-card{
-        .scroll{
-            width: 100%;
-            overflow-x: scroll;
-        }
-    }
-    .list-boxcard{
-        grid-template-columns: 1;
-        grid-template-rows: repeat(4, auto);
-    }
+.parrafo-card{
+    width: 322px;
+    height: 36px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+    letter-spacing: 0.03em;
+    
+
+    color: #757575;
 }

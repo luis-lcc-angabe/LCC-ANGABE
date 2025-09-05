@@ -1,0 +1,280 @@
+/* Modal de contacto para Traducciones (independiente) */
+.traducciones-modal3 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+.traducciones-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+}
+.traducciones-modal-content input,
+.traducciones-modal-content textarea {
+    width: 100%;
+    margin: 10px -10px ;
+    padding: 10px;
+    font-size: 16px;
+    outline-color: #078b21;
+}
+.traducciones-modal-content button {
+    background-color: #078b21;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.traducciones-modal-content button:hover {
+    background-color: #1eba3d;
+}
+.traducciones-cerrar {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 5%;
+    height: auto;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: #078b21;
+    border-radius: 50%;
+}
+.traducciones-cerrar:hover{
+    background-color: #078b21;
+    color: black;
+}
+.traducciones-exito {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+/* Botón contactar para Traducciones */
+.traducciones-contact-section button {
+    background-color: #078b21;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+.traducciones-contact-section button:hover {
+    background-color: #1eba3d;
+}
+/* Modal de contacto para Traducciones (idéntico a Intercambio y Clases) */
+.traducciones-modal3 {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.traducciones-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.traducciones-modal-content input,
+.traducciones-modal-content textarea {
+    width: 100%;
+    margin: 10px -10px ;
+    padding: 10px;
+    font-size: 16px;
+    outline-color: #078b21;
+}
+
+.traducciones-modal-content button {
+    background-color: #078b21;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.traducciones-modal-content button:hover {
+    background-color: #1eba3d;
+}
+
+.traducciones-cerrar {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 5%;
+    height: auto;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    color: #078b21;
+    border-radius: 50%;
+}
+.traducciones-cerrar:hover{
+    background-color: #078b21;
+    color: black;
+}
+
+.traducciones-exito {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+.traducciones-main-portafolio {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    background: #8dee79;
+}
+
+.traducciones-list-card{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/imagenes/img3.png");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(85, 85, 85) ;
+    padding-bottom: 5vh;
+}
+.traducciones-list-card h1{
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 10px 06px rgba(0, 0, 0, 0.6);
+}
+
+.traducciones-list-card .traducciones-list-boxcard{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 2rem;
+    background: #8dee79;
+    background-color: transparent;
+   
+}
+
+.traducciones-list-card .traducciones-list-boxcard .traducciones-list-product{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 368px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+    background: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.traducciones-list-card .traducciones-list-boxcard .traducciones-list-product:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.traducciones-card-emergent{
+   position: absolute;
+    height: 300px;
+    width: 367px;
+    padding: 63px 24px;
+    background: rgb(11, 143, 51, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.traducciones-list-card .traducciones-list-boxcard .traducciones-list-product:hover .traducciones-card-emergent{
+    transform: translateY(-102%);
+}
+
+.traducciones-card-animation{
+    border-radius: 5%;
+    width: 369px;
+    height: 294px;
+    position: relative;
+    overflow: hidden;
+}
+
+.traducciones-card-emergent p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.traducciones-list-product img{
+    width: 368px;
+    height: 294px;
+    background: url(.jpg);
+}
+.traducciones-card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}
+
+.traducciones-title-img-portafolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.traducciones-title-img-portafolio:hover{
+    color: #1d8109;
+}
+
+@media (max-width: 600px) {
+    .traducciones-list-card{
+        .scroll{
+            width: 100%;
+            overflow-x: scroll;
+        }
+    }
+    .traducciones-list-boxcard{
+        grid-template-columns: 1;
+        grid-template-rows: repeat(4, auto);
+    }
+}

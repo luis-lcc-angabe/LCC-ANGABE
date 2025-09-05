@@ -41,13 +41,15 @@
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  width: 300px;
-  height: 50%;
+  width: 350px;
+  min-height: 400px;
+  max-height: 90vh;
   display: block;
   text-align: center;
   position: relative;
   top: 0%;
   left: 0%;
+  overflow-y: auto;
 }
 
 .modal label {
@@ -111,20 +113,30 @@
   color: #000;
   cursor: pointer;
 }
+.modal .register:hover {
+  color: #078b21;
+}
 
 /* Botón para cerrar el modal */
 .close-btn {
   position: absolute;
-  top: 10px;
+  top: 1px;
   right: 15px;
   width: 25px;
   height: 25px;
-  font-size: 20px;
+  font-size: 25px;
   background: none;
   border: none;
   cursor: pointer;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  align-items: center;
+  justify-content: center;
 }
 .close-btn:hover{
   background: #078b21;
+  color: white;
 }

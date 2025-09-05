@@ -24,12 +24,12 @@
     height: 600px;
 
     background: #28292f;
-    background: url("../imagenes/img-berlin.png");
+    background: url("/imagenes/img-berlin.png");
     background-blend-mode: overlay;
     position: relative;
     text-align: center;
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: center;
     background-size: cover;
 }
 

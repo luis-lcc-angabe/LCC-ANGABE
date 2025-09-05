@@ -1,0 +1,230 @@
+/* Modal de contacto para Intercambio (independiente) */
+.intercambio-modal3 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+.intercambio-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+.intercambio-modal-content input,
+.intercambio-modal-content textarea {
+  width: 100%;
+  margin: 10px -10px ;
+  padding: 10px;
+  font-size: 16px;
+  outline-color: #078b21;
+}
+.intercambio-modal-content button {
+  background-color: #078b21;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.intercambio-modal-content button:hover {
+  background-color: #1eba3d;
+}
+.intercambio-cerrar {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  width: 5%;
+  height: auto;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #078b21;
+  border-radius: 50%;
+}
+.intercambio-cerrar:hover{
+  background-color: #078b21;
+  color: black;
+}
+.intercambio-exito {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+/* Botón contactar para Intercambio */
+.intercambio-contact-section button {
+  background-color: #078b21;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+.intercambio-contact-section button:hover {
+  background-color: #1eba3d;
+}
+/* //////////////////////////////////////////// */
+.intercambio-main-portafolio {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    
+    
+}
+
+.intercambio-list-card{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/imagenes/luxemburgo.png");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(160, 160, 160);
+    padding-bottom: 3vh;
+    padding-top: 2vh;
+} 
+.intercambio-list-card h1{
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0px 10px 06px rgba(0, 0, 0, 0.6);
+}
+
+.intercambio-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+
+.intercambio-carousel img {
+  display: none;
+  width: 100%;
+  height: 70vh;
+  /* object-fit: cover; */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.intercambio-carousel img.active {
+  display: block;
+}
+
+.intercambio-contact-section {
+  margin-top: 10px;
+}
+
+.intercambio-contact-section button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #078b21;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.intercambio-contact-section button:hover {
+  background-color: #1eba3d;
+}
+                        /* modal */
+.intercambio-modal3 {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.intercambio-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.intercambio-modal-content input,
+.intercambio-modal-content textarea {
+  width: 100%;
+  margin: 10px -10px ;
+  padding: 10px;
+  font-size: 16px;
+  outline-color: #078b21;
+}
+
+.intercambio-modal-content button {
+  background-color: #078b21;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intercambio-modal-content button:hover {
+  background-color: #1eba3d;
+}
+
+.intercambio-cerrar {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  width: 5%;
+  height: auto;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #078b21;
+  border-radius: 50%;
+}
+.intercambio-cerrar:hover{
+  background-color: #078b21;
+  color: black;
+}
+
+.intercambio-exito {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+  .intercambio-list-card{
+    /* height: 200vh; */
+    .scroll{
+      width: 100%;
+      overflow-x: scroll;
+    }
+  }
+}
