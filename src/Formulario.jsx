@@ -18,18 +18,18 @@ const Formulario = () => {
     // Recoger los datos del formulario por name
     const data = {
       email_usuario: form.elements['email_usuario'].value,
-      contraseña_usuario: form.elements['contraseña_usuario'].value,
+      contrasena_usuario: form.elements['contrasena_usuario'].value,
       confirmar_contrasena: form.elements['confirmar_contrasena'].value,
       nombre_usuario: form.elements['nombre_usuario'].value,
       apellido: form.elements['apellido'].value,
-      documento: form.elements['documento'].value,
+      documento: parseInt(form.elements['documento'].value, 10),
       tipo_documento: form.elements['tipo_documento'].value,
-      dia_nacimiento: form.elements['dia_nacimiento'].value,
-      mes_nacimiento: form.elements['mes_nacimiento'].value,
-      ano_nacimiento: form.elements['ano_nacimiento'].value,
-      sexo: form.elements['sexo'].value,
-      ofertas: form.elements['ofertas'] ? form.elements['ofertas'].checked : false,
-      acepta_politicas: form.elements['acepta_politicas'] ? form.elements['acepta_politicas'].checked : false
+      dia_nacimiento: parseInt(form.elements['dia_nacimiento'].value, 10),
+      mes_nacimiento: parseInt(form.elements['mes_nacimiento'].value, 10),
+      ano_nacimiento: parseInt(form.elements['ano_nacimiento'].value, 10),
+      sexo: form.elements['sexo'].value === 'masculino' ? 'M' : (form.elements['sexo'].value === 'femenino' ? 'F' : (form.elements['sexo'].value === 'otro' ? 'O' : '')),
+      ofertas: form.elements['ofertas'] ? (form.elements['ofertas'].checked ? 1 : 0) : 0,
+      acepta_politicas: form.elements['acepta_politicas'] ? (form.elements['acepta_politicas'].checked ? 1 : 0) : 0
     };
     // Enviar datos a la API backend
     try {
@@ -124,7 +124,7 @@ const Formulario = () => {
             <label>E-mail *</label>
             <input type="email" name="email_usuario" required />
             <label>Contraseña *</label>
-            <input type="password" name="contraseña_usuario" required />
+            <input type="password" name="contrasena_usuario" required />
             <label>Confirmar contraseña *</label>
             <input type="password" name="confirmar_contrasena" required />
             <label>Nombre *</label>
@@ -133,22 +133,31 @@ const Formulario = () => {
             <input type="text" name="apellido" required />
             <label>Documento *</label>
             <div className="documento">
-              <input type="text" name="documento" required />
-              <select name="tipo_documento">
-                <option value="cc">CC</option>
-                <option value="ti">TI</option>
-                <option value="ce">CE</option>
-              </select>
+            <input type="text" name="documento" required />
+            <select name="tipo_documento">
+              <option value="cc">CC</option>
+              <option value="ti">TI</option>
+              <option value="ce">CE</option>
+            </select>
             </div>
-            <label>Fecha nacimiento *</label>
+              <label>Fecha nacimiento *</label>
             <div className="fecha">
-              <input type="text" name="dia_nacimiento" placeholder="DIA" required />
-              <input type="text" name="mes_nacimiento" placeholder="MES" required />
+            <input type="text" name="dia_nacimiento" placeholder="DIA" required />
+            <input type="text" name="mes_nacimiento" placeholder="MES" required />
               <select name="ano_nacimiento" required>
                 <option value="">SELECCIÓN</option>
+                <option value="1999">1999</option>
                 <option value="2000">2000</option>
                 <option value="2001">2001</option>
-                {/* Agrega más años si lo deseas */}
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
               </select>
             </div>
             <label>Sexo *</label>

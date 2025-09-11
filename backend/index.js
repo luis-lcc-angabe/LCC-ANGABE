@@ -40,7 +40,7 @@ app.post('/usuarios', (req, res) => {
   const {
     nombre_usuario,
     email_usuario,
-    contraseña_usuario,
+    contrasena_usuario,
     apellido,
     documento,
     confirmar_contrasena,
@@ -53,26 +53,11 @@ app.post('/usuarios', (req, res) => {
     acepta_politicas
   } = req.body;
   db.query(
-    'INSERT INTO registro_usuario (nombre_usuario, email_usuario, contraseña_usuario, apellido, documento, confirmar_contrasena, tipo_documento, dia_nacimiento, mes_nacimiento, ano_nacimiento, sexo, ofertas, acepta_politicas) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
-    [nombre_usuario, email_usuario, contraseña_usuario, apellido, documento, confirmar_contrasena, tipo_documento, dia_nacimiento, mes_nacimiento, ano_nacimiento, sexo, ofertas, acepta_politicas],
+    'INSERT INTO registro_usuario (nombre_usuario, email_usuario, contrasena_usuario, apellido, documento, confirmar_contrasena, tipo_documento, dia_nacimiento, mes_nacimiento, ano_nacimiento, sexo, ofertas, acepta_politicas) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+    [nombre_usuario, email_usuario, contrasena_usuario, apellido, documento, confirmar_contrasena, tipo_documento, dia_nacimiento, mes_nacimiento, ano_nacimiento, sexo, ofertas, acepta_politicas],
     (err, result) => {
       if (err) return res.status(500).json({ error: err });
-      res.status(201).json({
-        id_usuario: result.insertId,
-        nombre_usuario,
-        email_usuario,
-        contraseña_usuario,
-        apellido,
-        documento,
-        confirmar_contrasena,
-        tipo_documento,
-        dia_nacimiento,
-        mes_nacimiento,
-        ano_nacimiento,
-        sexo,
-        ofertas,
-        acepta_politicas
-      });
+  res.status(201).json({ id_usuario: result.insertId });
     }
   );
 });
