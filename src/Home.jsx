@@ -95,15 +95,35 @@ const Home = () => {
               <div className="modal">
                 <h1 className="modal-title">ANGABE</h1>
                 <button className="close-btn" id="closeBtn">&times;</button>
-                <label htmlFor="usuario">Usuario</label>
-                <input type="text" id="usuario" />
-                <label htmlFor="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" />
-                <div className="checkbox">
-                  <input type="checkbox" id="olvido" />
-                  <label htmlFor="olvido" style={{margin: 0}}>Olvide mi contraseña</label>
-                </div>
-                <button className="login-btn">INICIAR SESION</button>
+                <form id="loginForm" onSubmit={async (e) => {
+                  e.preventDefault();
+                  const nombre_usuario = document.getElementById('nombre_usuario').value;
+                  const contrasena_usuario = document.getElementById('contrasena_usuario').value;
+                  try {
+                    const res = await fetch('http://localhost:3001/login', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ nombre_usuario, contrasena_usuario })
+                    });
+                    const data = await res.json();
+                    alert(data.message);
+                    if (res.ok && (data.usuario || data.message.includes('exitoso') || data.message.includes('encontrado'))) {
+                      document.getElementById('modalOverlay').style.display = 'none';
+                    }
+                  } catch (err) {
+                    alert('Error de conexión con el servidor');
+                  }
+                }}>
+                  <label htmlFor="nombre_usuario">Usuario</label>
+                  <input type="text" id="nombre_usuario" name="nombre_usuario" required />
+                  <label htmlFor="contrasena_usuario">Contraseña</label>
+                  <input type="password" id="contrasena_usuario" name="contrasena_usuario" required />
+                  <div className="checkbox">
+                    <input type="checkbox" id="olvido" />
+                    <label htmlFor="olvido" style={{margin: 0}}>Olvide mi contraseña</label>
+                  </div>
+                  <button className="login-btn" type="submit">INICIAR SESION</button>
+                </form>
                 <div className="div-register"><a className="register" href="/formulario">Registrarse</a></div>
               </div>
             </div>
