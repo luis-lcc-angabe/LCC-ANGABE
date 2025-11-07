@@ -1,5 +1,6 @@
 
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import logoLcc from "./assets/imagenes svg/logos/logo lcc.png";
 import flagAlemania from "./assets/imagenes/flag-of-germany.png";
 import flagEEUU from "./assets/imagenes/flag-eeuu.png";
@@ -67,11 +68,11 @@ const Traducciones = () => {
               </div>
               <button className="menu-toggle" id="menu-toggle">&#9776;</button>
               <ul className="header-menu" id="header-menu">
-                <li className="open_submenu"><a className="link-header" href="/">Inicio</a></li>
-                <li><a className="link-header" href="/clases">Clases</a></li>
-                <li><a className="link-header barra" href="/traducciones">Traducciones</a></li>
-                <li><a className="link-header" href="/intercambio">Intercambio</a></li>
-                <li><a className="link-header" href="/cotizacion">Cotización</a></li>
+                <li className="open_submenu"><Link className="link-header" to="/">Inicio</Link></li>
+                <li><Link className="link-header" to="/clases">Clases</Link></li>
+                <li><Link className="link-header barra" to="/traducciones">Traducciones</Link></li>
+                <li><Link className="link-header" to="/intercambio">Intercambio</Link></li>
+                <li><Link className="link-header" to="/cotizacion">Cotización</Link></li>
                 <button className="open-modal-btn">Iniciar Sesión</button>
               </ul>
             </nav>

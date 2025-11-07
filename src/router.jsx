@@ -8,7 +8,9 @@ import Intercambio from "./Intercambio";
 import Traducciones from "./Traducciones";
 
 const Router = () => (
-  <BrowserRouter>
+  // Use Vite's BASE_URL so the app works both in dev ("/") and in production
+  // when deployed under the /LCC-ANGABE/ subpath.
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/clases" element={<Clases />} />

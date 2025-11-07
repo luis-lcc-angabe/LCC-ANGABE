@@ -1,5 +1,6 @@
 
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import TeamSection from "./components/TeamSection";
 import logoLcc from "./assets/imagenes svg/logos/logo lcc.png";
 import clasesaleman from "./assets/imagenes/clasesaleman.jpg";
@@ -69,11 +70,11 @@ const Home = () => {
               </div>
               <button className="menu-toggle" id="menu-toggle">&#9776;</button>
               <ul className="header-menu" id="header-menu">
-                <li className="open_submenu"><a className="link-header barra" href="/">Inicio</a></li>
-                <li><a className="link-header" href="/clases">Clases</a></li>
-                <li><a className="link-header" href="/traducciones">Traducciones</a></li>
-                <li><a className="link-header" href="/intercambio">Intercambio</a></li>
-                <li><a className="link-header" href="/cotizacion">Cotización</a></li>
+                <li className="open_submenu"><Link className="link-header barra" to="/">Inicio</Link></li>
+                <li><Link className="link-header" to="/clases">Clases</Link></li>
+                <li><Link className="link-header" to="/traducciones">Traducciones</Link></li>
+                <li><Link className="link-header" to="/intercambio">Intercambio</Link></li>
+                <li><Link className="link-header" to="/cotizacion">Cotización</Link></li>
                 <li><button className="open-modal-btn">Iniciar Sesión</button></li>
               </ul>
             </nav>
@@ -87,8 +88,8 @@ const Home = () => {
         <main>
           <section className="banner">
             <h1 className="title-pal">SOLUCIONES EFICACES</h1>
-            <div className="open-modal-btns">
-              <a href="/cotizacion"><button type="button">COTIZA AHORA</button></a>
+                <div className="open-modal-btns">
+              <Link to="/cotizacion"><button type="button">COTIZA AHORA</button></Link>
             </div>
             <div className="banner-overlay"></div>
             <div className="modal-overlay" id="modalOverlay" style={{display: 'none'}}>
@@ -124,7 +125,7 @@ const Home = () => {
                   </div>
                   <button className="login-btn" type="submit">INICIAR SESION</button>
                 </form>
-                <div className="div-register"><a className="register" href="/formulario">Registrarse</a></div>
+                <div className="div-register"><Link className="register" to="/formulario">Registrarse</Link></div>
               </div>
             </div>
           </section>
@@ -134,7 +135,7 @@ const Home = () => {
             <section className="list-card">
               <div className="list-boxcard">
                 <section className="list-product">
-                  <a href="/clases">
+                  <Link to="/clases">
                     <div className="card-animation">
                       <img src={clasesaleman} alt="" />
                       <div className="card-emergent">
@@ -144,10 +145,10 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="title-img-portafolio">Cursos de Idioma</h3>
                     </div>
-                  </a>
+                  </Link>
                 </section>
                 <section className="list-product">
-                  <a href="/traducciones">
+                  <Link to="/traducciones">
                     <div className="card-animation">
                       <img src={traduccionImg} alt="" />
                       <div className="card-emergent">
@@ -157,10 +158,10 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="title-img-portafolio">Traducciones</h3>
                     </div>
-                  </a>
+                  </Link>
                 </section>
                 <section className="list-product">
-                  <a href="/intercambio">
+                  <Link to="/intercambio">
                     <div className="card-animation">
                       <img src={intercambioImg} alt="" />
                       <div className="card-emergent">
@@ -170,7 +171,7 @@ const Home = () => {
                     <div className="card-body">
                       <h3 className="title-img-portafolio">Intercambio Cultural</h3>
                     </div>
-                  </a>
+                  </Link>
                 </section>
               </div>
             </section>

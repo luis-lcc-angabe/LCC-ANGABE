@@ -1,5 +1,6 @@
 
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import logoLcc from "./assets/imagenes svg/logos/logo lcc.png";
 import abcdAleman from "./assets/imagenes/abcd-aleman.png";
 import "./css/styles.css";
@@ -62,11 +63,11 @@ const Clases = () => {
               </div>
               <button className="menu-toggle" id="menu-toggle">&#9776;</button>
               <ul className="header-menu" id="header-menu">
-                <li className="open_submenu"><a className="link-header" href="/">Inicio</a></li>
-                <li><a className="link-header barra" href="/clases">Clases</a></li>
-                <li><a className="link-header" href="/traducciones">Traducciones</a></li>
-                <li><a className="link-header" href="/intercambio">Intercambio</a></li>
-                <li><a className="link-header" href="/cotizacion">Cotización</a></li>
+                <li className="open_submenu"><Link className="link-header" to="/">Inicio</Link></li>
+                <li><Link className="link-header barra" to="/clases">Clases</Link></li>
+                <li><Link className="link-header" to="/traducciones">Traducciones</Link></li>
+                <li><Link className="link-header" to="/intercambio">Intercambio</Link></li>
+                <li><Link className="link-header" to="/cotizacion">Cotización</Link></li>
                 <li><button className="open-modal-btn">Iniciar Sesión</button></li>
               </ul>
             </nav>
@@ -91,7 +92,7 @@ const Clases = () => {
                 <label htmlFor="olvido" style={{margin: 0}}>Olvide mi contraseña</label>
               </div>
               <button className="login-btn">INICIAR SESION</button>
-              <div className="div-register"><a className="register" href="/formulario">Registrarse</a></div>
+              <div className="div-register"><Link className="register" to="/formulario">Registrarse</Link></div>
             </div>
           </div>
           <section className="clases-list-card">

@@ -1,6 +1,7 @@
 
 
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import logoLcc from "./assets/imagenes svg/logos/logo lcc.png";
 import "./css/formulario.css";
 import "./css/styles.css";
@@ -89,8 +90,8 @@ const Formulario = () => {
               </div>
               <button className="menu-toggle" id="menu-toggle">&#9776;</button>
               <ul className="header-menu" id="header-menu">
-                <li className="open_submenu"><a className="link-header" href="/">Inicio</a></li>
-                <li><a className="link-header barra" href="/formulario">Registro</a></li>
+                <li className="open_submenu"><Link className="link-header" to="/">Inicio</Link></li>
+                <li><Link className="link-header barra" to="/formulario">Registro</Link></li>
               </ul>
             </nav>
             <ul className="logo">
@@ -114,7 +115,7 @@ const Formulario = () => {
               <label htmlFor="olvido" style={{margin: 0}}>Olvide mi contraseña</label>
             </div>
             <button className="login-btn">INICIAR SESION</button>
-            <div className="div-register"><a className="register" href="/formulario">Registrarse</a></div>
+            <div className="div-register"><Link className="register" to="/formulario">Registrarse</Link></div>
           </div>
         </div>
         <div className="form-container">

@@ -11,6 +11,9 @@ ul{
     background-color: #FFFFFF;
     padding: 0 4%;
     box-sizing: border-box;
+    /* Asegurar que el header esté por encima de otros elementos (evita que el logo u otros bloques oculten los links) */
+    position: relative;
+    z-index: 1000;
 }
 
 .container{
@@ -73,6 +76,9 @@ ul{
     font-weight: 700;
     font-size: 1rem;
     color: #212121;
+    /* Forzar color visible si hay estilos globales que lo sobreescriban */
+    -webkit-text-fill-color: #212121;
+    z-index: 1001;
 }
 
 
@@ -82,6 +88,8 @@ ul{
     justify-content: center;
     width: 30%;
     height: auto;
+    /* Mantener el logo por debajo del header-nav para evitar solapamientos */
+    z-index: 0;
 }
 
 .logo__img{
