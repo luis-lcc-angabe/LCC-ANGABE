@@ -2,12 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/imagenes/svg/logos/logo_lcc.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LCC ANGABE</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <noscript>
+      <div style="padding:1rem;background:#ffe8e8;color:#900;font-weight:700;text-align:center;">
+        Esta aplicación requiere JavaScript para funcionar. Por favor habilita JavaScript o prueba en otro navegador.
+      </div>
+    </noscript>
+    <!-- Si el bundle JS es bloqueado por una extensión (adblock u otra), onerror mostrará un aviso útil -->
+    <script type="module" src="/src/main.jsx" onerror="document.getElementById('root').innerHTML='<div style=\'padding:1rem;background:#fff4cc;color:#663c00;font-weight:700;text-align:center;\'>No se pudo cargar la aplicación. Es posible que una extensión (p. ej. adblock) esté bloqueando los scripts. Prueba a desactivar extensiones o abre la página en modo incógnito.<br/>Abre la consola del navegador (F12) para más detalles.</div>'"></script>
   </body>
 </html>

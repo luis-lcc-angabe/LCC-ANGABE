@@ -1,35 +1,24 @@
 import React from "react";
 import "../css/team.css";
 
+// Import images so Vite bundles them and generates correct paths for production
+import clasesaleman from "../assets/imagenes/profe1.jpg";
+import intercambioImg from "../assets/imagenes/profe2.jpg";
+import abcd from "../assets/imagenes/profe3.jpg";
+import traducc from "../assets/imagenes/profe4.jpg";
+import img1 from "../assets/imagenes/img1.png";
+import img2 from "../assets/imagenes/img2.png";
+import img3 from "../assets/imagenes/img3.png";
+import imgBerlin from "../assets/imagenes/img-berlin.png";
+
 const teamMembers = [
-  {
-    name: "Christopher Walker",
-    role: "Profesor",
-    img: "/imagenes/imagen(3)(1).jpg",
-  },
-  {
-    name: "Kylie Evans",
-    role: "Traductora oficial",
-    img: "/imagenes/imagen (4) (1).jpg",
-  },
-  {
-    name: "Ryan Harris",
-    role: "Administrador",
-    img: "/imagenes/imagen (5) (1).jpg",
-  },
-  {
-    name: "Tyler Moore",
-    role: "Traductor",
-    img: "/imagenes/imagen (6) (1).jpg",
-  },
+  { name: "Christopher Walker", role: "Profesor", img: clasesaleman },
+  { name: "Kylie Evans", role: "Traductora oficial", img: intercambioImg },
+  { name: "Ryan Harris", role: "Administrador", img: abcd },
+  { name: "Tyler Moore", role: "Traductor", img: traducc },
 ];
 
-const socialLogos = [
-  { src: "/imagenes/img1.png", alt: "Facebook" },
-  { src: "/imagenes/img2.png", alt: "Instagram" },
-  { src: "/imagenes/img3.png", alt: "LinkedIn" },
-  { src: "/imagenes/img-berlin.png", alt: "Twitter" },
-];
+const socialLogos = [img1, img2, img3, imgBerlin];
 
 export default function TeamSection() {
   return (
@@ -66,9 +55,9 @@ export default function TeamSection() {
           </defs>
         </svg>
         <li className="card car-margin">
-          <img src="/imagenes/imagen(3)(1).jpg" alt="" />
-          <h3>Christopher Walker</h3>
-          <p>Profesor</p>
+          <img src={teamMembers[0].img} alt={teamMembers[0].name} />
+          <h3>{teamMembers[0].name}</h3>
+          <p>{teamMembers[0].role}</p>
           <ul>
             <li>
               <svg className="icon-card"><use href="#facebook"></use></svg>
@@ -85,9 +74,9 @@ export default function TeamSection() {
           </ul>
         </li>
         <li className="card">
-          <img src="/imagenes/imagen(4)(1).jpg" alt="" />
-          <h3>Kylie Evans</h3>
-          <p>Traductora oficial</p>
+          <img src={teamMembers[1].img} alt={teamMembers[1].name} />
+          <h3>{teamMembers[1].name}</h3>
+          <p>{teamMembers[1].role}</p>
           <ul>
             <li>
               <svg className="icon-card"><use href="#facebook"></use></svg>
@@ -104,9 +93,9 @@ export default function TeamSection() {
           </ul>
         </li>
         <li className="card">
-          <img src="/imagenes/imagen(5)(1).jpg" alt="" />
-          <h3>Ryan Harris</h3>
-          <p>Administrador</p>
+          <img src={teamMembers[2].img} alt={teamMembers[2].name} />
+          <h3>{teamMembers[2].name}</h3>
+          <p>{teamMembers[2].role}</p>
           <ul>
             <li>
               <svg className="icon-card"><use href="#facebook"></use></svg>
@@ -123,9 +112,9 @@ export default function TeamSection() {
           </ul>
         </li>
         <li className="card">
-          <img src="/imagenes/imagen(6)(1).jpg" alt="" />
-          <h3>Tyler Moore</h3>
-          <p>Traductor</p>
+          <img src={teamMembers[3].img} alt={teamMembers[3].name} />
+          <h3>{teamMembers[3].name}</h3>
+          <p>{teamMembers[3].role}</p>
           <ul>
             <li>
               <svg className="icon-card"><use href="#facebook"></use></svg>
