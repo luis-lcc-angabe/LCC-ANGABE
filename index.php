@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                                                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                         <div class="card-body" >
-                            <h3 class="title-img-portafolio">Cursos de Idioma</h3>
+                            <h3 class="title-img-portafolio">Clases De Alemán</h3>
                         
                         </div>
                     </section>

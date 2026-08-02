@@ -66,26 +66,26 @@
 
     <p class="welcome">Bienvenido LCC traducciones. Regístrate y sé parte de nuestra familia ANGABE online.</p>
 
-    <form class="register-form">
+    <form class="register-form" action="php/procesar_registro.php" method="POST"> 
       <label>E-mail *</label>
-      <input type="email" required>
+      <input type="email" name="correo" required>
 
       <label>Contraseña *</label>
-      <input type="password" required>
+      <input type="password" name="contrasena" required>
 
       <label>Confirmar contraseña *</label>
-      <input type="password" required>
+      <input type="password" name="confirmar_contrasena" required>
 
       <label>Nombre *</label>
-      <input type="text" required>
+      <input type="text" name="nombre" required>
 
       <label>Apellidos *</label>
-      <input type="text" required>
+      <input type="text" name="apellidos" required>
 
       <label>Documento *</label>
       <div class="documento">
-        <input type="text" required>
-        <select>
+        <input type="text" name="documento" required>
+        <select name="tipo_documento">
           <option value="cc">CC</option>
           <option value="ti">TI</option>
           <option value="ce">CE</option>
@@ -105,14 +105,12 @@
       </div>
 
       <label>Sexo *</label>
-      <select required>
+      <select name="sexo"required>
         <option value="">SELECCIÓN</option>
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
         <option value="otro">Otro</option>
       </select>
-
-    <form id="registroForm" >
     <br>
     <div class="checkbox-group">
       <label><input type="checkbox"> Deseo recibir ofertas por e-mail</label>
@@ -122,6 +120,7 @@
       <button type="submit">ENVIAR</button>
     </div>
   </div>
+</form>
 
   <div id="mensajeExito" class="mensaje-exito oculto">¡Registro exitoso!</div>
 
